@@ -19,6 +19,12 @@
     <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
+    <div id="loading-screen" class="centered-column">
+      <div class="spinner centered-column">
+        <div class="loader"></div>
+      </div>
+    </div>
+
     <!-- NAVBAR -->
     <nav class="navbar navbar-default navbar-fixed-top header-background">
       <div class="container centered-column">
@@ -224,5 +230,13 @@
     </footer>
 
     <script src="js/nav-highlight.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#loading-screen').slideUp('slow')
+      })
+      setTimeout(function() {
+          $('#loading-screen').slideUp('slow')
+      }, 3000)
+    </script>
   </body>
 </html>

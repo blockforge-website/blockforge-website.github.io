@@ -6,6 +6,7 @@ body {
   min-height: 100vh;
   background: white no-repeat 50% 35%;
   background-image: url("../img/home-hero.png");
+  background-size: cover;
   color: white;
 }
 #home h3 {
@@ -86,6 +87,7 @@ body {
 #about-image {
   background: white no-repeat 50% 50%;
   background-image: url("../img/about-hero.png");
+  background-size: cover;
   height: 50vh;
 }
 
@@ -128,6 +130,7 @@ body {
 #contact-hero {
   background: white no-repeat 50% 50%;
   background-image: url("../img/contact-hero.png");
+  background-size: cover;
   width: 100%;
   color: white;
 }

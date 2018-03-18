@@ -232,7 +232,9 @@
     <script src="js/nav-highlight.js"></script>
     <script>
       $(document).ready(function() {
-        $('#loading-screen').slideUp('slow')
+        $('#home').load(function() {
+          $('#loading-screen').slideUp('slow')
+        })
       })
       setTimeout(function() {
           $('#loading-screen').slideUp('slow')

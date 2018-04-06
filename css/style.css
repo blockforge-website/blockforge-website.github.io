@@ -142,6 +142,9 @@ body {
 #contact input {
   border-radius: 8px;
 }
+#contact textarea {
+  border-radius: 8px;
+}
 #contact h4 {
   font-size: 16px;
   margin-bottom: 0px;
@@ -304,6 +307,9 @@ footer {
   .splash-logo img {
     height: 50px;
     margin-bottom: 20px;
+  }
+  .email-signup {
+    bottom: 37px;
   }
 }
 

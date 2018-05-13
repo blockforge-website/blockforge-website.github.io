@@ -3,10 +3,8 @@ body {
 }
 
 #home {
-  min-height: 100vh;
+  min-height: 80vh;
   background: white no-repeat 50% 35%;
-  background-image: url("../img/home-hero.png");
-  background-size: cover;
   color: white;
 }
 #home h3 {
@@ -16,6 +14,28 @@ body {
   margin-top: 20px;
   font-size: 40px;
   font-weight: 100;
+}
+#splash-image {
+  background-image: url("../img/home-hero.png");
+  background-size: cover;
+  min-height: 80vh;
+  padding: 0% 12%;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  #splash-image {
+    padding: 0% 5%;
+  }
+}
+@media (max-width: 991px) {
+  #splash-image {
+    padding: 0% 7%;
+  }
+}
+@media (max-width: 662px) {
+  #splash-image {
+    padding: 0% 5%;
+  }
 }
 .splash-logo {
   height: 100px;
@@ -27,17 +47,17 @@ body {
   margin-left: 5px;
 }
 #splash-1 {
-
+  
 }
 #splash-2 {
-  align-self: flex-end;
+
 }
 #splash-3 {
   
 }
 .home-container {
   position: relative;
-  min-height: 100vh;
+  padding: 0px;
 }
 .email-signup {
   position: absolute;
@@ -72,7 +92,14 @@ body {
   font-weight: 200;
   width: 250px;
 }
-
+#home .social-row {
+  margin-top: 140px;
+}
+@media (max-width: 444px) {
+  #home .social-row {
+    margin-top: 80px;
+  }
+}
 
 
 #about {
@@ -183,10 +210,11 @@ p {
 
 .social-row {
   margin-top: 20px;
-  display: none;
 }
 .social-icon {
   margin: 5px;
+  height: 40px;
+  width: 40px;
 }
 .social-icon:hover {
   -o-transform: scale(1.12);
@@ -224,7 +252,7 @@ p {
 }
 
 footer {
-  padding: 30px 0px;
+  padding: 20px 0px;
 }
 
 .active {
@@ -375,12 +403,6 @@ footer {
   #home #splash-3 {
     font-size: 24px;
   }
-
-  .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 @media (max-width: 344px) {
@@ -392,12 +414,6 @@ footer {
   }
   #home #splash-3 {
     font-size: 22px;
-  }
-
-  .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
